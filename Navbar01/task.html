@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Tailwind Nav</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <nav class="p-3 bg-red-600 flex justify-between items-center">
+    <a href="#" id="brand" class="flex gap-1 items-center">
+      <img src="images/diskimg.avif" alt="">
+      <span class="text-lg font-xl font-[1100] text-white">Canon</span>
+    </a>
+    <div class="hidden lg:flex gap-12">
+      <a href="#" class="font-medium text-white hover:text-blue-300">Pricing</a>
+      <a href="#" class="font-medium text-white hover:text-blue-300">Docs</a>
+      <a href="#" class="font-medium text-white hover:text-blue-300">Changelog</a>
+      <a href="#" class="font-medium text-white hover:text-blue-300">Blogs</a>
+      <a href="#" class="font-medium text-white hover:text-blue-300">Login</a>
+    </div>
+    <button class="hidden md:block text-white py-2 px-8 bg-blue-600 rounded-3xl hover:text-black">
+      Sign up
+    </button>
+    <button class="p-2 lg:hidden" onclick="handleMenu()">
+      <i class="fa-solid fa-bars text-white"></i>
+    </button>
+  </nav>
+  <div id="nav-bar" class="fixed bg-white inset-0 z-50 hidden">
+    <div class="flex justify-between p-3 bg-red-600">
+      <a href="#" id="brand" class="flex gap-1 items-center">
+        <img src="images/diskimg.avif" alt="">
+        <span class="text-lg font-xl font-[1100] text-white">FoOd</span>
+      </a>
+      <button class="p-2" onclick="handleMenu()">
+        <i class="fa-solid fa-times text-white"></i>
+      </button>
+    </div>
+    <div class="p-5">
+      <a href="#" class="block font-medium text-black hover:text-blue-300 py-2">Pricing</a>
+      <a href="#" class="block font-medium text-black hover:text-blue-300 py-2">Docs</a>
+      <a href="#" class="block font-medium text-black hover:text-blue-300 py-2">Changelog</a>
+      <a href="#" class="block font-medium text-black hover:text-blue-300 py-2">Blogs</a>
+      <a href="#" class="block font-medium text-black hover:text-blue-300 py-2">Login</a>
+    </div>
+  </div>
+<script>
+  function handleMenu() {
+    document.getElementById('nav-bar').classList.toggle('hidden');
+  }
+</script>
+</body>
+</html>
