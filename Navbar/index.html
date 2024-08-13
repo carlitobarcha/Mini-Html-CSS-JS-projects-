@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Navigation Bar</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000; /* Set background color to black */
+            margin: 0; /* Remove default margin */
+        }
+        .navbar-custom {
+            background-color: #f8f8f8;
+            border-radius: 35px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 40px; /* Gap between top and the navbar */
+        }
+        .nav-link-custom {
+            color: #020202;
+            font-weight: bold;
+        }
+        .nav-item.active .nav-link-custom {
+            background-color: #aeaeae;
+            color: #070707 !important;
+            border-radius: 30px;
+        }
+        .navbar-brand-custom {
+            color: #000000;
+            font-weight: bold;
+        }
+        .badge-custom {
+            background-color: #aeaeae;
+        }
+        .footer {
+            background-color: transparent; /* Remove background color */
+            color: #bdbdbd; /* Set text color to white */
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .footer-text {
+            font-size: 1rem; /* Medium text size */
+        }
+        .motto {
+            position: absolute;
+            color: rgb(190, 190, 190); /* Text color */
+            font-size: 2rem; /* Font size */
+            font-family: Arial, Georgia, 'Times New Roman', ; /* Font family */
+            top: 40%; /* Adjust top position */
+            left: 30%; /* Adjust left position */
+            transform: translate(-50%, -50%); /* Center text */
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom p-4">
+        <a class="navbar-brand navbar-brand-custom" href="#">Nikon</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link nav-link-custom" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="#">Tutorial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="#">Our Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="#"><i class="fas fa-search"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="#"><i class="fas fa-shopping-cart"></i><span class="badge badge-pill badge-custom">10</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Motto Text -->
+    <div class="motto">
+        <p>Trustworthiness and Creativity</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-text">Code With Carlito</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<img src="img.01.jpg" alt="Background Image">
+</html>
