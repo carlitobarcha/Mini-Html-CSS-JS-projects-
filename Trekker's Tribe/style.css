@@ -1,0 +1,315 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #e0e0e0; /* Light grey text for better readability on dark background */
+    background-color: #121212; /* Dark background */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background: #1a1a1a; /* Dark grey header */
+    color: #ffd700; /* Golden text */
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #ffd700; /* Golden border */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+    color: #e0e0e0; /* Light grey text */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffd700; /* Golden links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #e0e0e0; /* Light grey on hover */
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://source.unsplash.com/1200x600/?hunza,valley') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.hero .btn {
+    background: #ffd700; /* Golden button */
+    color: #121212; /* Dark text */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero .btn:hover {
+    background: #e0b800; /* Darker golden on hover */
+}
+
+/* Destinations Section */
+.destinations {
+    padding: 50px 0;
+    text-align: center;
+    background: #1a1a1a; /* Dark grey background */
+}
+
+.destinations h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #ffd700; /* Golden heading */
+}
+
+.destination-grid, .trek-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.destination, .trek {
+    width: 30%;
+    margin: 20px 0;
+    background: #2a2a2a; /* Dark grey cards */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.destination img, .trek img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.destination h3, .trek h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #ffd700; /* Golden text */
+}
+
+.destination p, .trek p {
+    color: #e0e0e0; /* Light grey text */
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 50px 0;
+    text-align: center;
+    background: #121212; /* Dark background */
+}
+
+.gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #ffd700; /* Golden heading */
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 30%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Booking Section */
+.booking {
+    padding: 50px 0;
+    text-align: center;
+    background: #1a1a1a; /* Dark grey background */
+}
+
+.booking h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffd700; /* Golden heading */
+}
+
+.booking form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booking form label {
+    margin: 10px 0 5px;
+    color: #e0e0e0; /* Light grey text */
+}
+
+.booking form input, .booking form select, .booking form button {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #444; /* Dark grey border */
+    border-radius: 5px;
+    background: #2a2a2a; /* Dark grey input background */
+    color: #e0e0e0; /* Light grey text */
+}
+
+.booking form button {
+    background: #ffd700; /* Golden button */
+    color: #121212; /* Dark text */
+    border: none;
+    cursor: pointer;
+}
+
+.booking form button:hover {
+    background: #e0b800; /* Darker golden on hover */
+}
+
+/* About Us Section */
+.about {
+    padding: 50px 0;
+    text-align: center;
+    background: #121212; /* Dark background */
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffd700; /* Golden heading */
+}
+
+.about p {
+    color: #e0e0e0; /* Light grey text */
+}
+
+/* Contact Us Section */
+.contact {
+    padding: 50px 0;
+    text-align: center;
+    background: #1a1a1a; /* Dark grey background */
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffd700; /* Golden heading */
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form label {
+    margin: 10px 0 5px;
+    color: #e0e0e0; /* Light grey text */
+}
+
+.contact form input, .contact form textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #444; /* Dark grey border */
+    border-radius: 5px;
+    background: #2a2a2a; /* Dark grey input background */
+    color: #e0e0e0; /* Light grey text */
+}
+
+.contact form button {
+    background: #ffd700; /* Golden button */
+    color: #121212; /* Dark text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background: #e0b800; /* Darker golden on hover */
+}
+
+/* Footer Styles */
+footer {
+    background: #1a1a1a; /* Dark grey footer */
+    color: #e0e0e0; /* Light grey text */
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #ffd700; /* Golden border */
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* Social Media Icons */
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    color: #ffd700; /* Golden color */
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #e0b800; /* Darker golden on hover */
+}

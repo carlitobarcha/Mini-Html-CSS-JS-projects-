@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trekkers Tribe - Explore North Pakistan</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+     <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Trekkers Tribe</h1>
+            <p>Your Gateway to the Mountains of North Pakistan</p>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#treks">Trekking Tracks</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#booking">Book Now</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Explore the Majestic Mountains of North Pakistan</h2>
+            <p>From Hunza Valley to Fairy Meadows, experience the beauty of Gilgit-Baltistan and beyond.</p>
+            <a href="#destinations" class="btn">Discover More</a>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <h2>Popular Destinations</h2>
+            <div class="destination-grid">
+                <div class="destination">
+                    <img src="https://source.unsplash.com/400x300/?hunza,valley" alt="Hunza Valley">
+                    <h3>Hunza Valley</h3>
+                    <p>Known for its breathtaking landscapes and rich culture.</p>
+                </div>
+                <div class="destination">
+                    <img src="https://source.unsplash.com/400x300/?attabad,lake" alt="Attabad Lake">
+                    <h3>Attabad Lake</h3>
+                    <p>A stunning turquoise lake formed after a landslide.</p>
+                </div>
+                <div class="destination">
+                    <img src="https://source.unsplash.com/400x300/?khunjerab,pass" alt="Khunjerab Pass">
+                    <h3>Khunjerab Pass</h3>
+                    <p>The highest paved international border crossing in the world.</p>
+                </div>
+                <div class="destination">
+                    <img src="https://source.unsplash.com/400x300/?karakoram,highway" alt="Karakoram Highway">
+                    <h3>Karakoram Highway</h3>
+                    <p>The "Eighth Wonder of the World" connecting Pakistan and China.</p>
+                </div>
+                <div class="destination">
+                    <img src="https://source.unsplash.com/400x300/?naran,kaghan" alt="Naran Kaghan">
+                    <h3>Naran Kaghan</h3>
+                    <p>A paradise for nature lovers with lush green valleys and rivers.</p>
+                </div>
+                <div class="destination">
+                    <img src="https://source.unsplash.com/400x300/?fairy,meadows" alt="Fairy Meadows">
+                    <h3>Fairy Meadows</h3>
+                    <p>A lush green meadow with stunning views of Nanga Parbat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trekking Tracks Section -->
+    <section id="treks" class="treks">
+        <div class="container">
+            <h2>Trekking Tracks</h2>
+            <div class="trek-grid">
+                <div class="trek">
+                    <img src="https://source.unsplash.com/400x300/?rakaposhi,base,camp" alt="Rakaposhi Base Camp Trek">
+                    <h3>Rakaposhi Base Camp Trek</h3>
+                    <p>A challenging trek with breathtaking views of Rakaposhi Peak.</p>
+                </div>
+                <div class="trek">
+                    <img src="https://source.unsplash.com/400x300/?hon,pass,trek" alt="Hon Pass Trek">
+                    <h3>Hon Pass Trek</h3>
+                    <p>A high-altitude trek connecting Hunza and Nagar valleys.</p>
+                </div>
+                <div class="trek">
+                    <img src="https://source.unsplash.com/400x300/?batura,glacier" alt="Batura Glacier Trek">
+                    <h3>Batura Glacier Trek</h3>
+                    <p>Explore one of the largest glaciers outside the polar regions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="https://source.unsplash.com/300x200/?hunza,valley" alt="Hunza Valley">
+                <img src="https://source.unsplash.com/300x200/?attabad,lake" alt="Attabad Lake">
+                <img src="https://source.unsplash.com/300x200/?khunjerab,pass" alt="Khunjerab Pass">
+                <img src="https://source.unsplash.com/300x200/?karakoram,highway" alt="Karakoram Highway">
+                <img src="https://source.unsplash.com/300x200/?naran,kaghan" alt="Naran Kaghan">
+                <img src="https://source.unsplash.com/300x200/?fairy,meadows" alt="Fairy Meadows">
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2>Book Your Adventure</h2>
+            <form id="bookingForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="destination">Destination:</label>
+                <select id="destination" name="destination" required>
+                    <option value="hunza">Hunza Valley</option>
+                    <option value="attabad">Attabad Lake</option>
+                    <option value="khunjerab">Khunjerab Pass</option>
+                    <option value="karakoram">Karakoram Highway</option>
+                    <option value="naran">Naran Kaghan</option>
+                    <option value="fairy">Fairy Meadows</option>
+                </select>
+
+                <label for="date">Travel Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Trekkers Tribe</h2>
+            <p>Trekkers Tribe is a travel company dedicated to providing unforgettable experiences in the mountains of North Pakistan. Our mission is to showcase the beauty of this region while promoting sustainable tourism.</p>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+       
+        <footer>
+            <div class="container">
+                <p>&copy; 2023 Trekkers Tribe. All rights reserved.</p>
+                <div class="social-media">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
